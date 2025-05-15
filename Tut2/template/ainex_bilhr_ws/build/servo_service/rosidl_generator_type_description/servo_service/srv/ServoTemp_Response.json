@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/srv/ServoTemp_Response",
+      "fields": [
+        {
+          "name": "temperature",
+          "type": {
+            "type_id": 146,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/srv/ServoTemp_Response",
+      "hash_string": "RIHS01_e51ce9273cf14cb41216dafe435a3b3782083b9a07c7ea36d883e780ff439dcf"
+    }
+  ]
+}

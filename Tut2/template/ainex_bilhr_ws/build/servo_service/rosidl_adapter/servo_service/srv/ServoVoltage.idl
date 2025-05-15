@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from servo_service/srv/ServoVoltage.srv
+// generated code does not contain a copyright notice
+
+
+module servo_service {
+  module srv {
+    struct ServoVoltage_Request {
+      sequence<uint8> ids;
+    };
+    struct ServoVoltage_Response {
+      sequence<int32> vin;
+    };
+  };
+};

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/srv/ServoDeviation_Request",
+      "fields": [
+        {
+          "name": "ids",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/srv/ServoDeviation_Request",
+      "hash_string": "RIHS01_6b1b395c5e8dab18f63fe13483becd59c6cd17bc6324c4911b60c8bcb1e4995d"
+    }
+  ]
+}

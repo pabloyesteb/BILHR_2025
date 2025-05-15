@@ -1,0 +1,17 @@
+[0.891s] Invoking command in '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/build --no-deps symlink_data
+[1.247s] running develop
+[1.478s] running egg_info
+[1.500s] writing ainex_motion.egg-info/PKG-INFO
+[1.500s] writing dependency_links to ainex_motion.egg-info/dependency_links.txt
+[1.500s] writing entry points to ainex_motion.egg-info/entry_points.txt
+[1.501s] writing requirements to ainex_motion.egg-info/requires.txt
+[1.501s] writing top-level names to ainex_motion.egg-info/top_level.txt
+[1.546s] reading manifest file 'ainex_motion.egg-info/SOURCES.txt'
+[1.547s] writing manifest file 'ainex_motion.egg-info/SOURCES.txt'
+[1.570s] running build_ext
+[1.571s] Creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages/ainex-motion.egg-link (link to .)
+[1.571s] Installing joint_controller script to /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/ainex_motion
+[1.572s] 
+[1.572s] Installed /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion
+[1.572s] running symlink_data
+[1.602s] Invoked command in '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/build --no-deps symlink_data

@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+ainex_vision/__init__.py
+ainex_vision/camera_sub.py
+ainex_vision.egg-info/PKG-INFO
+ainex_vision.egg-info/SOURCES.txt
+ainex_vision.egg-info/dependency_links.txt
+ainex_vision.egg-info/entry_points.txt
+ainex_vision.egg-info/requires.txt
+ainex_vision.egg-info/top_level.txt
+ainex_vision.egg-info/zip-safe
+resource/ainex_vision

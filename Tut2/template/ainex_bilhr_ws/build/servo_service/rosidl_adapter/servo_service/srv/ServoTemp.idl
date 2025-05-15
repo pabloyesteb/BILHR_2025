@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from servo_service/srv/ServoTemp.srv
+// generated code does not contain a copyright notice
+
+
+module servo_service {
+  module srv {
+    struct ServoTemp_Request {
+      sequence<uint8> ids;
+    };
+    struct ServoTemp_Response {
+      sequence<int8> temperature;
+    };
+  };
+};

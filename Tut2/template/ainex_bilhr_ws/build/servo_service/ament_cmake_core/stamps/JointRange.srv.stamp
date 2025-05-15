@@ -1,0 +1,4 @@
+uint8[] ids
+---
+float32[] angle_min
+float32[] angle_max

@@ -1,0 +1,16 @@
+{
+  "package_name": "servo_service",
+  "non_idl_tuples": [
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:msg/ChangeServoPositions.msg",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:msg/SetServoPositions.msg",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:msg/SetJointLock.msg",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:msg/GetServoPositions.msg",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:msg/SetPosture.msg",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:srv/JointLock.srv",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:srv/ServoTemp.srv",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:srv/ServoDeviation.srv",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:srv/ServoVoltage.srv",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:srv/JointPosition.srv",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service:srv/JointRange.srv"
+  ]
+}

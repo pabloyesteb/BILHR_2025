@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating ainex_vision.egg-info
+writing ainex_vision.egg-info/PKG-INFO
+writing dependency_links to ainex_vision.egg-info/dependency_links.txt
+writing entry points to ainex_vision.egg-info/entry_points.txt
+writing requirements to ainex_vision.egg-info/requires.txt
+writing top-level names to ainex_vision.egg-info/top_level.txt
+writing manifest file 'ainex_vision.egg-info/SOURCES.txt'
+reading manifest file 'ainex_vision.egg-info/SOURCES.txt'
+writing manifest file 'ainex_vision.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/lib/python3.12/site-packages/ainex-vision.egg-link (link to .)
+Installing camera_sub script to /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/lib/ainex_vision
+
+Installed /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision
+running symlink_data
+creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index
+creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index/resource_index
+creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index/resource_index/packages
+symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision/resource/ainex_vision -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index/resource_index/packages
+symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision/package.xml -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ainex_vision

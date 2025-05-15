@@ -1,0 +1,46 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/msg/ChangeServoPositions",
+      "fields": [
+        {
+          "name": "ids",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "positions",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "duration",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/msg/ChangeServoPositions",
+      "hash_string": "RIHS01_e0383377dd9fa439b7805c64dd67d87bcbd3bc6f09bfa8079ecd83df6d3fdaba"
+    }
+  ]
+}

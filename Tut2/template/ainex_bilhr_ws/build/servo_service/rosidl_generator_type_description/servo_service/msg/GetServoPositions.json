@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/msg/GetServoPositions",
+      "fields": [
+        {
+          "name": "ids",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "positions",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/msg/GetServoPositions",
+      "hash_string": "RIHS01_d71df4d888aaffeb06e13a5680c3b1ccf04c23b84e812b8d93a61150d8a7be63"
+    }
+  ]
+}

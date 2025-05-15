@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/change_servo_positions__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/change_servo_positions__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/get_servo_positions__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/get_servo_positions__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_joint_lock__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_joint_lock__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_posture__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_posture__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_servo_positions__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_servo_positions__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_lock__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_lock__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_position__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_position__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_range__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_range__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_deviation__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_deviation__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_temp__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_temp__type_support.cpp.o.d"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_voltage__type_support.cpp.o"
+  "CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_voltage__type_support.cpp.o.d"
+  "libservo_service__rosidl_typesupport_c.pdb"
+  "libservo_service__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/servo_service/msg/change_servo_positions__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/msg/get_servo_positions__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/msg/set_joint_lock__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/msg/set_posture__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/msg/set_servo_positions__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/srv/joint_lock__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/srv/joint_position__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/srv/joint_range__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/srv/servo_deviation__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/srv/servo_temp__type_support.cpp"
+  "rosidl_typesupport_c/servo_service/srv/servo_voltage__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/servo_service__rosidl_typesupport_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

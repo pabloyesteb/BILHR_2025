@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from servo_service/srv/ServoDeviation.srv
+// generated code does not contain a copyright notice
+
+
+module servo_service {
+  module srv {
+    struct ServoDeviation_Request {
+      sequence<uint8> ids;
+    };
+    struct ServoDeviation_Response {
+      sequence<int16> deviation;
+    };
+  };
+};

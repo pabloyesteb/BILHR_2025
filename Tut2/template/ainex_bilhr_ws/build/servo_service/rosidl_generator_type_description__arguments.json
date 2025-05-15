@@ -1,0 +1,23 @@
+{
+  "package_name": "servo_service",
+  "output_dir": "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_generator_type_description/servo_service",
+  "idl_tuples": [
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:msg/ChangeServoPositions.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:msg/SetServoPositions.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:msg/SetJointLock.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:msg/GetServoPositions.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:msg/SetPosture.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:srv/JointLock.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:srv/ServoTemp.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:srv/ServoDeviation.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:srv/ServoVoltage.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:srv/JointPosition.idl",
+    "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_adapter/servo_service:srv/JointRange.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

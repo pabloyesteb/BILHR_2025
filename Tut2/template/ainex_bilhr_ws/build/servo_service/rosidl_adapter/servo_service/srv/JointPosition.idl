@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from servo_service/srv/JointPosition.srv
+// generated code does not contain a copyright notice
+
+
+module servo_service {
+  module srv {
+    struct JointPosition_Request {
+      sequence<uint8> ids;
+    };
+    struct JointPosition_Response {
+      sequence<float> position;
+    };
+  };
+};

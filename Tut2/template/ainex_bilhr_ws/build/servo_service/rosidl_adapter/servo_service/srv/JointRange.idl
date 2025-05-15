@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from servo_service/srv/JointRange.srv
+// generated code does not contain a copyright notice
+
+
+module servo_service {
+  module srv {
+    struct JointRange_Request {
+      sequence<uint8> ids;
+    };
+    struct JointRange_Response {
+      sequence<float> angle_min;
+
+      sequence<float> angle_max;
+    };
+  };
+};

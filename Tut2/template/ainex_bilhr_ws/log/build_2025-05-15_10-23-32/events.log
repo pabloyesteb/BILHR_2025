@@ -1,0 +1,747 @@
+[0.000000] (-) TimerEvent: {}
+[0.000295] (ainex_vision) JobQueued: {'identifier': 'ainex_vision', 'dependencies': OrderedDict()}
+[0.000332] (servo_service) JobQueued: {'identifier': 'servo_service', 'dependencies': OrderedDict()}
+[0.000732] (ainex_motion) JobQueued: {'identifier': 'ainex_motion', 'dependencies': OrderedDict({'servo_service': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service'})}
+[0.000760] (servo_service) JobStarted: {'identifier': 'servo_service'}
+[0.007632] (ainex_vision) JobStarted: {'identifier': 'ainex_vision'}
+[0.015247] (servo_service) JobProgress: {'identifier': 'servo_service', 'progress': 'cmake'}
+[0.015812] (servo_service) Command: {'cmd': ['/usr/bin/cmake', '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service'], 'cwd': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bilhr2025', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bilhr2025', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2256', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bilhr2025', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bilhr2025', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ainex-lab:@/tmp/.ICE-unix/2256,unix/ainex-lab:/tmp/.ICE-unix/2256', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/12df7156_e780_4556_a9eb_a92273617bcd', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.135', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'ROS_DOMAIN_ID': '45', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099807] (-) TimerEvent: {}
+[0.188127] (servo_service) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199912] (-) TimerEvent: {}
+[0.300132] (-) TimerEvent: {}
+[0.312278] (servo_service) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.333794] (servo_service) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400250] (-) TimerEvent: {}
+[0.433442] (servo_service) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.442850] (servo_service) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.443665] (servo_service) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.444652] (servo_service) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.454956] (servo_service) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500318] (-) TimerEvent: {}
+[0.566201] (servo_service) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.576534] (servo_service) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.576941] (servo_service) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.577619] (servo_service) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.582108] (servo_service) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.600397] (-) TimerEvent: {}
+[0.700611] (-) TimerEvent: {}
+[0.744466] (servo_service) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.800697] (-) TimerEvent: {}
+[0.827038] (servo_service) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.879716] (servo_service) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.900803] (-) TimerEvent: {}
+[0.935837] (servo_service) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.953708] (servo_service) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.977491] (servo_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.000902] (-) TimerEvent: {}
+[1.002976] (servo_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.070856] (servo_service) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.090192] (servo_service) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.101022] (-) TimerEvent: {}
+[1.105129] (ainex_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision/build', '--no-deps', 'symlink_data'], 'cwd': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bilhr2025', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bilhr2025', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2256', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bilhr2025', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bilhr2025', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ainex-lab:@/tmp/.ICE-unix/2256,unix/ainex-lab:/tmp/.ICE-unix/2256', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/12df7156_e780_4556_a9eb_a92273617bcd', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.135', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'ROS_DOMAIN_ID': '45', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.201125] (-) TimerEvent: {}
+[1.301386] (-) TimerEvent: {}
+[1.401616] (-) TimerEvent: {}
+[1.466118] (ainex_vision) StdoutLine: {'line': b'running develop\n'}
+[1.501745] (-) TimerEvent: {}
+[1.602012] (-) TimerEvent: {}
+[1.701589] (ainex_vision) StdoutLine: {'line': b'running egg_info\n'}
+[1.701777] (ainex_vision) StdoutLine: {'line': b'creating ainex_vision.egg-info\n'}
+[1.702073] (-) TimerEvent: {}
+[1.723989] (ainex_vision) StdoutLine: {'line': b'writing ainex_vision.egg-info/PKG-INFO\n'}
+[1.724304] (ainex_vision) StdoutLine: {'line': b'writing dependency_links to ainex_vision.egg-info/dependency_links.txt\n'}
+[1.724579] (ainex_vision) StdoutLine: {'line': b'writing entry points to ainex_vision.egg-info/entry_points.txt\n'}
+[1.724822] (ainex_vision) StdoutLine: {'line': b'writing requirements to ainex_vision.egg-info/requires.txt\n'}
+[1.724979] (ainex_vision) StdoutLine: {'line': b'writing top-level names to ainex_vision.egg-info/top_level.txt\n'}
+[1.725113] (ainex_vision) StdoutLine: {'line': b"writing manifest file 'ainex_vision.egg-info/SOURCES.txt'\n"}
+[1.771150] (ainex_vision) StdoutLine: {'line': b"reading manifest file 'ainex_vision.egg-info/SOURCES.txt'\n"}
+[1.771766] (ainex_vision) StdoutLine: {'line': b"writing manifest file 'ainex_vision.egg-info/SOURCES.txt'\n"}
+[1.796441] (ainex_vision) StdoutLine: {'line': b'running build_ext\n'}
+[1.796730] (ainex_vision) StdoutLine: {'line': b'Creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/lib/python3.12/site-packages/ainex-vision.egg-link (link to .)\n'}
+[1.797325] (ainex_vision) StdoutLine: {'line': b'Installing camera_sub script to /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/lib/ainex_vision\n'}
+[1.797624] (ainex_vision) StdoutLine: {'line': b'\n'}
+[1.797753] (ainex_vision) StdoutLine: {'line': b'Installed /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision\n'}
+[1.797918] (ainex_vision) StdoutLine: {'line': b'running symlink_data\n'}
+[1.797998] (ainex_vision) StdoutLine: {'line': b'creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index\n'}
+[1.798070] (ainex_vision) StdoutLine: {'line': b'creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index/resource_index\n'}
+[1.798158] (ainex_vision) StdoutLine: {'line': b'creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index/resource_index/packages\n'}
+[1.798263] (ainex_vision) StdoutLine: {'line': b'symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision/resource/ainex_vision -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ament_index/resource_index/packages\n'}
+[1.798328] (ainex_vision) StdoutLine: {'line': b'symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_vision/package.xml -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_vision/share/ainex_vision\n'}
+[1.802207] (-) TimerEvent: {}
+[1.834076] (ainex_vision) CommandEnded: {'returncode': 0}
+[1.844604] (servo_service) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.851016] (ainex_vision) JobEnded: {'identifier': 'ainex_vision', 'rc': 0}
+[1.902294] (-) TimerEvent: {}
+[2.002532] (-) TimerEvent: {}
+[2.102791] (-) TimerEvent: {}
+[2.203026] (-) TimerEvent: {}
+[2.303311] (-) TimerEvent: {}
+[2.403600] (-) TimerEvent: {}
+[2.504078] (-) TimerEvent: {}
+[2.604332] (-) TimerEvent: {}
+[2.704575] (-) TimerEvent: {}
+[2.762985] (servo_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.804695] (-) TimerEvent: {}
+[2.904925] (-) TimerEvent: {}
+[3.005193] (-) TimerEvent: {}
+[3.105435] (-) TimerEvent: {}
+[3.110538] (servo_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.116765] (servo_service) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[3.205552] (-) TimerEvent: {}
+[3.253806] (servo_service) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[3.305644] (-) TimerEvent: {}
+[3.405921] (-) TimerEvent: {}
+[3.506178] (-) TimerEvent: {}
+[3.606412] (-) TimerEvent: {}
+[3.698930] (servo_service) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[3.706504] (-) TimerEvent: {}
+[3.774093] (servo_service) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.806632] (-) TimerEvent: {}
+[3.809143] (servo_service) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.811312] (servo_service) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.816689] (servo_service) StdoutLine: {'line': b'-- Configuring done (3.8s)\n'}
+[3.883593] (servo_service) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[3.896905] (servo_service) StdoutLine: {'line': b'-- Build files have been written to: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service\n'}
+[3.906763] (-) TimerEvent: {}
+[3.907146] (servo_service) CommandEnded: {'returncode': 0}
+[3.907822] (servo_service) JobProgress: {'identifier': 'servo_service', 'progress': 'build'}
+[3.908778] (servo_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service', '--', '-j8', '-l8'], 'cwd': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bilhr2025', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bilhr2025', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2256', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bilhr2025', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bilhr2025', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ainex-lab:@/tmp/.ICE-unix/2256,unix/ainex-lab:/tmp/.ICE-unix/2256', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/12df7156_e780_4556_a9eb_a92273617bcd', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.135', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'ROS_DOMAIN_ID': '45', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.966858] (servo_service) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[3.975453] (servo_service) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_servo_service\n'}
+[4.006874] (-) TimerEvent: {}
+[4.107105] (-) TimerEvent: {}
+[4.203972] (servo_service) StdoutLine: {'line': b'running egg_info\n'}
+[4.204919] (servo_service) StdoutLine: {'line': b'creating servo_service.egg-info\n'}
+[4.207198] (-) TimerEvent: {}
+[4.226440] (servo_service) StdoutLine: {'line': b'writing servo_service.egg-info/PKG-INFO\n'}
+[4.226810] (servo_service) StdoutLine: {'line': b'writing dependency_links to servo_service.egg-info/dependency_links.txt\n'}
+[4.227089] (servo_service) StdoutLine: {'line': b'writing top-level names to servo_service.egg-info/top_level.txt\n'}
+[4.227296] (servo_service) StdoutLine: {'line': b"writing manifest file 'servo_service.egg-info/SOURCES.txt'\n"}
+[4.273779] (servo_service) StdoutLine: {'line': b'[  1%] Built target servo_service__rosidl_generator_type_description\n'}
+[4.286251] (servo_service) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.297129] (servo_service) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.304299] (servo_service) StdoutLine: {'line': b"reading manifest file 'servo_service.egg-info/SOURCES.txt'\n"}
+[4.304880] (servo_service) StdoutLine: {'line': b"writing manifest file 'servo_service.egg-info/SOURCES.txt'\n"}
+[4.307294] (-) TimerEvent: {}
+[4.337491] (servo_service) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_servo_service_egg\n'}
+[4.407395] (-) TimerEvent: {}
+[4.507637] (-) TimerEvent: {}
+[4.607863] (-) TimerEvent: {}
+[4.708087] (-) TimerEvent: {}
+[4.808316] (-) TimerEvent: {}
+[4.908544] (-) TimerEvent: {}
+[5.008773] (-) TimerEvent: {}
+[5.110214] (-) TimerEvent: {}
+[5.210391] (servo_service) StdoutLine: {'line': b'[  2%] Built target servo_service__cpp\n'}
+[5.210702] (-) TimerEvent: {}
+[5.310956] (-) TimerEvent: {}
+[5.412547] (-) TimerEvent: {}
+[5.489577] (servo_service) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/change_servo_positions__description.c.o\x1b[0m\n'}
+[5.489917] (servo_service) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_servo_positions__description.c.o\x1b[0m\n'}
+[5.490101] (servo_service) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/change_servo_positions__type_support.c.o\x1b[0m\n'}
+[5.490349] (servo_service) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_servo_positions__type_support.c.o\x1b[0m\n'}
+[5.490516] (servo_service) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/change_servo_positions__functions.c.o\x1b[0m\n'}
+[5.491038] (servo_service) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_joint_lock__description.c.o\x1b[0m\n'}
+[5.491504] (servo_service) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_servo_positions__functions.c.o\x1b[0m\n'}
+[5.491676] (servo_service) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_joint_lock__functions.c.o\x1b[0m\n'}
+[5.512653] (-) TimerEvent: {}
+[5.552454] (servo_service) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_joint_lock__type_support.c.o\x1b[0m\n'}
+[5.553186] (servo_service) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/get_servo_positions__description.c.o\x1b[0m\n'}
+[5.566434] (servo_service) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/get_servo_positions__functions.c.o\x1b[0m\n'}
+[5.566686] (servo_service) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/get_servo_positions__type_support.c.o\x1b[0m\n'}
+[5.573436] (servo_service) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_posture__description.c.o\x1b[0m\n'}
+[5.591485] (servo_service) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_posture__functions.c.o\x1b[0m\n'}
+[5.591797] (servo_service) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/msg/detail/set_posture__type_support.c.o\x1b[0m\n'}
+[5.593327] (servo_service) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_lock__description.c.o\x1b[0m\n'}
+[5.605302] (servo_service) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_lock__functions.c.o\x1b[0m\n'}
+[5.616237] (-) TimerEvent: {}
+[5.619272] (servo_service) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_lock__type_support.c.o\x1b[0m\n'}
+[5.627139] (servo_service) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_temp__description.c.o\x1b[0m\n'}
+[5.637466] (servo_service) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_temp__functions.c.o\x1b[0m\n'}
+[5.649230] (servo_service) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_temp__type_support.c.o\x1b[0m\n'}
+[5.662754] (servo_service) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_deviation__description.c.o\x1b[0m\n'}
+[5.677927] (servo_service) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_deviation__functions.c.o\x1b[0m\n'}
+[5.688251] (servo_service) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_deviation__type_support.c.o\x1b[0m\n'}
+[5.689398] (servo_service) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_voltage__description.c.o\x1b[0m\n'}
+[5.715841] (servo_service) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_voltage__functions.c.o\x1b[0m\n'}
+[5.716313] (-) TimerEvent: {}
+[5.720056] (servo_service) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/servo_voltage__type_support.c.o\x1b[0m\n'}
+[5.737955] (servo_service) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_position__description.c.o\x1b[0m\n'}
+[5.751860] (servo_service) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_position__functions.c.o\x1b[0m\n'}
+[5.761874] (servo_service) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_position__type_support.c.o\x1b[0m\n'}
+[5.776939] (servo_service) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_range__description.c.o\x1b[0m\n'}
+[5.777208] (servo_service) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_range__functions.c.o\x1b[0m\n'}
+[5.792938] (servo_service) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_c.dir/rosidl_generator_c/servo_service/srv/detail/joint_range__type_support.c.o\x1b[0m\n'}
+[5.816416] (-) TimerEvent: {}
+[5.876507] (servo_service) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking C shared library libservo_service__rosidl_generator_c.so\x1b[0m\n'}
+[5.916563] (-) TimerEvent: {}
+[5.925731] (servo_service) StdoutLine: {'line': b'[ 27%] Built target servo_service__rosidl_generator_c\n'}
+[5.938583] (servo_service) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.938853] (servo_service) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.939431] (servo_service) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.941312] (servo_service) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.941569] (servo_service) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.941795] (servo_service) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.016858] (-) TimerEvent: {}
+[6.117150] (-) TimerEvent: {}
+[6.217417] (-) TimerEvent: {}
+[6.317668] (-) TimerEvent: {}
+[6.422203] (-) TimerEvent: {}
+[6.522451] (-) TimerEvent: {}
+[6.623662] (-) TimerEvent: {}
+[6.723950] (-) TimerEvent: {}
+[6.788278] (servo_service) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/msg/detail/change_servo_positions__type_support.c.o\x1b[0m\n'}
+[6.788547] (servo_service) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/msg/detail/set_servo_positions__type_support.c.o\x1b[0m\n'}
+[6.789001] (servo_service) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/msg/detail/set_joint_lock__type_support.c.o\x1b[0m\n'}
+[6.806259] (servo_service) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/change_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[6.806813] (servo_service) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/msg/change_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[6.824037] (-) TimerEvent: {}
+[6.864528] (servo_service) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/msg/detail/get_servo_positions__type_support.c.o\x1b[0m\n'}
+[6.864745] (servo_service) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/msg/detail/set_posture__type_support.c.o\x1b[0m\n'}
+[6.869743] (servo_service) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/srv/detail/joint_lock__type_support.c.o\x1b[0m\n'}
+[6.893713] (servo_service) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[6.924129] (-) TimerEvent: {}
+[6.925549] (servo_service) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/msg/set_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[6.951410] (servo_service) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/srv/detail/servo_temp__type_support.c.o\x1b[0m\n'}
+[6.963572] (servo_service) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/srv/detail/servo_deviation__type_support.c.o\x1b[0m\n'}
+[6.976287] (servo_service) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_joint_lock__type_support.cpp.o\x1b[0m\n'}
+[7.024216] (-) TimerEvent: {}
+[7.040238] (servo_service) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/srv/detail/servo_voltage__type_support.c.o\x1b[0m\n'}
+[7.059892] (servo_service) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/get_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[7.076987] (servo_service) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/msg/set_posture__type_support.cpp.o\x1b[0m\n'}
+[7.124326] (-) TimerEvent: {}
+[7.146321] (servo_service) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/msg/set_joint_lock__type_support.cpp.o\x1b[0m\n'}
+[7.146625] (servo_service) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/srv/detail/joint_position__type_support.c.o\x1b[0m\n'}
+[7.154591] (servo_service) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_lock__type_support.cpp.o\x1b[0m\n'}
+[7.224444] (-) TimerEvent: {}
+[7.244053] (servo_service) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_temp__type_support.cpp.o\x1b[0m\n'}
+[7.245530] (servo_service) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/servo_service/srv/detail/joint_range__type_support.c.o\x1b[0m\n'}
+[7.328227] (-) TimerEvent: {}
+[7.330920] (servo_service) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/msg/detail/change_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[7.331217] (servo_service) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_deviation__type_support.cpp.o\x1b[0m\n'}
+[7.352311] (servo_service) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libservo_service__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.414306] (servo_service) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/servo_voltage__type_support.cpp.o\x1b[0m\n'}
+[7.414758] (servo_service) StdoutLine: {'line': b'[ 50%] Built target servo_service__rosidl_typesupport_introspection_c\n'}
+[7.428328] (-) TimerEvent: {}
+[7.442703] (servo_service) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/msg/detail/set_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[7.444533] (servo_service) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_position__type_support.cpp.o\x1b[0m\n'}
+[7.446255] (servo_service) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/msg/detail/set_joint_lock__type_support.cpp.o\x1b[0m\n'}
+[7.498914] (servo_service) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/msg/detail/get_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[7.526704] (servo_service) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_c.dir/rosidl_typesupport_c/servo_service/srv/joint_range__type_support.cpp.o\x1b[0m\n'}
+[7.530212] (-) TimerEvent: {}
+[7.538246] (servo_service) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/msg/detail/dds_fastrtps/change_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[7.611680] (servo_service) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libservo_service__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.630308] (-) TimerEvent: {}
+[7.688320] (servo_service) StdoutLine: {'line': b'[ 55%] Built target servo_service__rosidl_typesupport_c\n'}
+[7.705711] (servo_service) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/msg/get_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[7.712297] (servo_service) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/msg/detail/set_posture__type_support.cpp.o\x1b[0m\n'}
+[7.730407] (-) TimerEvent: {}
+[7.830704] (-) TimerEvent: {}
+[7.930993] (-) TimerEvent: {}
+[8.019869] (servo_service) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/msg/set_posture__type_support.cpp.o\x1b[0m\n'}
+[8.031111] (-) TimerEvent: {}
+[8.070148] (servo_service) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/msg/detail/dds_fastrtps/set_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[8.118508] (servo_service) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/msg/detail/change_servo_positions__type_support_c.cpp.o\x1b[0m\n'}
+[8.124835] (servo_service) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/msg/detail/set_servo_positions__type_support_c.cpp.o\x1b[0m\n'}
+[8.131272] (-) TimerEvent: {}
+[8.140088] (servo_service) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/msg/detail/dds_fastrtps/set_joint_lock__type_support.cpp.o\x1b[0m\n'}
+[8.231375] (-) TimerEvent: {}
+[8.269072] (servo_service) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/srv/detail/joint_lock__type_support.cpp.o\x1b[0m\n'}
+[8.272619] (servo_service) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/msg/detail/set_joint_lock__type_support_c.cpp.o\x1b[0m\n'}
+[8.331488] (-) TimerEvent: {}
+[8.431824] (-) TimerEvent: {}
+[8.492304] (servo_service) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/msg/detail/get_servo_positions__type_support_c.cpp.o\x1b[0m\n'}
+[8.531924] (-) TimerEvent: {}
+[8.598438] (servo_service) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/srv/joint_lock__type_support.cpp.o\x1b[0m\n'}
+[8.634247] (-) TimerEvent: {}
+[8.734619] (-) TimerEvent: {}
+[8.835040] (-) TimerEvent: {}
+[8.935441] (-) TimerEvent: {}
+[8.945978] (servo_service) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/srv/servo_temp__type_support.cpp.o\x1b[0m\n'}
+[8.994474] (servo_service) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/msg/detail/set_posture__type_support_c.cpp.o\x1b[0m\n'}
+[9.021184] (servo_service) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/msg/detail/dds_fastrtps/get_servo_positions__type_support.cpp.o\x1b[0m\n'}
+[9.035548] (-) TimerEvent: {}
+[9.058429] (servo_service) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/srv/servo_deviation__type_support.cpp.o\x1b[0m\n'}
+[9.095641] (servo_service) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/srv/detail/servo_temp__type_support.cpp.o\x1b[0m\n'}
+[9.135665] (-) TimerEvent: {}
+[9.167322] (servo_service) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/srv/detail/servo_deviation__type_support.cpp.o\x1b[0m\n'}
+[9.235771] (-) TimerEvent: {}
+[9.301049] (servo_service) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/msg/detail/dds_fastrtps/set_posture__type_support.cpp.o\x1b[0m\n'}
+[9.335890] (-) TimerEvent: {}
+[9.338354] (servo_service) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/srv/detail/joint_lock__type_support_c.cpp.o\x1b[0m\n'}
+[9.436012] (-) TimerEvent: {}
+[9.536428] (-) TimerEvent: {}
+[9.639409] (-) TimerEvent: {}
+[9.740698] (-) TimerEvent: {}
+[9.744407] (servo_service) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/srv/detail/servo_voltage__type_support.cpp.o\x1b[0m\n'}
+[9.827868] (servo_service) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/srv/detail/joint_position__type_support.cpp.o\x1b[0m\n'}
+[9.841244] (-) TimerEvent: {}
+[9.863858] (servo_service) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/srv/servo_voltage__type_support.cpp.o\x1b[0m\n'}
+[9.945238] (-) TimerEvent: {}
+[10.045458] (servo_service) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/srv/detail/servo_temp__type_support_c.cpp.o\x1b[0m\n'}
+[10.045727] (-) TimerEvent: {}
+[10.105268] (servo_service) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/servo_service/srv/detail/joint_range__type_support.cpp.o\x1b[0m\n'}
+[10.111259] (servo_service) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/srv/joint_position__type_support.cpp.o\x1b[0m\n'}
+[10.127614] (servo_service) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/srv/detail/dds_fastrtps/joint_lock__type_support.cpp.o\x1b[0m\n'}
+[10.145853] (-) TimerEvent: {}
+[10.247057] (-) TimerEvent: {}
+[10.291510] (servo_service) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/srv/detail/dds_fastrtps/servo_temp__type_support.cpp.o\x1b[0m\n'}
+[10.347179] (-) TimerEvent: {}
+[10.447491] (-) TimerEvent: {}
+[10.547856] (-) TimerEvent: {}
+[10.648245] (-) TimerEvent: {}
+[10.673446] (servo_service) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/srv/detail/dds_fastrtps/servo_deviation__type_support.cpp.o\x1b[0m\n'}
+[10.709989] (servo_service) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/srv/detail/dds_fastrtps/servo_voltage__type_support.cpp.o\x1b[0m\n'}
+[10.748375] (-) TimerEvent: {}
+[10.765995] (servo_service) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/servo_service/srv/joint_range__type_support.cpp.o\x1b[0m\n'}
+[10.848473] (-) TimerEvent: {}
+[10.938299] (servo_service) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/srv/detail/servo_deviation__type_support_c.cpp.o\x1b[0m\n'}
+[10.950236] (servo_service) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/srv/detail/dds_fastrtps/joint_position__type_support.cpp.o\x1b[0m\n'}
+[10.950507] (-) TimerEvent: {}
+[11.032920] (servo_service) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libservo_service__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.050623] (-) TimerEvent: {}
+[11.150969] (-) TimerEvent: {}
+[11.253063] (-) TimerEvent: {}
+[11.279012] (servo_service) StdoutLine: {'line': b'[ 79%] Built target servo_service__rosidl_typesupport_introspection_cpp\n'}
+[11.294454] (servo_service) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/srv/detail/servo_voltage__type_support_c.cpp.o\x1b[0m\n'}
+[11.353214] (-) TimerEvent: {}
+[11.410471] (servo_service) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/srv/detail/joint_position__type_support_c.cpp.o\x1b[0m\n'}
+[11.457244] (-) TimerEvent: {}
+[11.549178] (servo_service) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libservo_service__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.557355] (-) TimerEvent: {}
+[11.614532] (servo_service) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/servo_service/srv/detail/dds_fastrtps/joint_range__type_support.cpp.o\x1b[0m\n'}
+[11.657479] (-) TimerEvent: {}
+[11.740580] (servo_service) StdoutLine: {'line': b'[ 82%] Built target servo_service__rosidl_typesupport_cpp\n'}
+[11.754889] (servo_service) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/servo_service__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/servo_service/srv/detail/joint_range__type_support_c.cpp.o\x1b[0m\n'}
+[11.757590] (-) TimerEvent: {}
+[11.859097] (-) TimerEvent: {}
+[11.960565] (-) TimerEvent: {}
+[12.060873] (-) TimerEvent: {}
+[12.161187] (-) TimerEvent: {}
+[12.261490] (-) TimerEvent: {}
+[12.356110] (servo_service) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libservo_service__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.361603] (-) TimerEvent: {}
+[12.450729] (servo_service) StdoutLine: {'line': b'[ 84%] Built target servo_service__rosidl_typesupport_fastrtps_c\n'}
+[12.461728] (-) TimerEvent: {}
+[12.478649] (servo_service) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libservo_service__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.561859] (-) TimerEvent: {}
+[12.588924] (servo_service) StdoutLine: {'line': b'[ 85%] Built target servo_service__rosidl_typesupport_fastrtps_cpp\n'}
+[12.610678] (servo_service) StdoutLine: {'line': b'[ 85%] Built target servo_service\n'}
+[12.633125] (servo_service) StdoutLine: {'line': b'[ 86%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.662062] (-) TimerEvent: {}
+[12.762589] (-) TimerEvent: {}
+[12.862885] (-) TimerEvent: {}
+[12.963122] (-) TimerEvent: {}
+[13.063389] (-) TimerEvent: {}
+[13.163626] (-) TimerEvent: {}
+[13.263861] (-) TimerEvent: {}
+[13.364096] (-) TimerEvent: {}
+[13.464349] (-) TimerEvent: {}
+[13.564596] (-) TimerEvent: {}
+[13.664839] (-) TimerEvent: {}
+[13.765083] (-) TimerEvent: {}
+[13.865364] (-) TimerEvent: {}
+[13.965610] (-) TimerEvent: {}
+[14.065869] (-) TimerEvent: {}
+[14.067558] (servo_service) StdoutLine: {'line': b'[ 86%] Built target servo_service__py\n'}
+[14.093754] (servo_service) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/msg/_set_servo_positions_s.c.o\x1b[0m\n'}
+[14.094095] (servo_service) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/msg/_set_joint_lock_s.c.o\x1b[0m\n'}
+[14.094391] (servo_service) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/msg/_get_servo_positions_s.c.o\x1b[0m\n'}
+[14.094559] (servo_service) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/srv/_joint_lock_s.c.o\x1b[0m\n'}
+[14.094712] (servo_service) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/srv/_servo_temp_s.c.o\x1b[0m\n'}
+[14.094912] (servo_service) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/msg/_change_servo_positions_s.c.o\x1b[0m\n'}
+[14.095245] (servo_service) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/msg/_set_posture_s.c.o\x1b[0m\n'}
+[14.095750] (servo_service) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/srv/_servo_deviation_s.c.o\x1b[0m\n'}
+[14.166187] (-) TimerEvent: {}
+[14.267230] (-) TimerEvent: {}
+[14.354321] (servo_service) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/srv/_servo_voltage_s.c.o\x1b[0m\n'}
+[14.367342] (-) TimerEvent: {}
+[14.390675] (servo_service) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/srv/_joint_position_s.c.o\x1b[0m\n'}
+[14.396184] (servo_service) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/servo_service__rosidl_generator_py.dir/rosidl_generator_py/servo_service/srv/_joint_range_s.c.o\x1b[0m\n'}
+[14.467457] (-) TimerEvent: {}
+[14.567734] (-) TimerEvent: {}
+[14.619024] (servo_service) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library libservo_service__rosidl_generator_py.so\x1b[0m\n'}
+[14.667856] (-) TimerEvent: {}
+[14.675000] (servo_service) StdoutLine: {'line': b'[ 95%] Built target servo_service__rosidl_generator_py\n'}
+[14.696740] (servo_service) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/servo_service_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/servo_service/_servo_service_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.699978] (servo_service) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/servo_service_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/servo_service/_servo_service_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.700157] (servo_service) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/servo_service_s__rosidl_typesupport_c.dir/rosidl_generator_py/servo_service/_servo_service_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.767981] (-) TimerEvent: {}
+[14.868260] (-) TimerEvent: {}
+[14.887154] (servo_service) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/servo_service/servo_service_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.889480] (servo_service) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/servo_service/servo_service_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.890438] (servo_service) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/servo_service/servo_service_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.926402] (servo_service) StdoutLine: {'line': b'[100%] Built target servo_service_s__rosidl_typesupport_c\n'}
+[14.927622] (servo_service) StdoutLine: {'line': b'[100%] Built target servo_service_s__rosidl_typesupport_fastrtps_c\n'}
+[14.929541] (servo_service) StdoutLine: {'line': b'[100%] Built target servo_service_s__rosidl_typesupport_introspection_c\n'}
+[14.943085] (servo_service) CommandEnded: {'returncode': 0}
+[14.943739] (servo_service) JobProgress: {'identifier': 'servo_service', 'progress': 'install'}
+[14.952835] (servo_service) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service'], 'cwd': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bilhr2025', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bilhr2025', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2256', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bilhr2025', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bilhr2025', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ainex-lab:@/tmp/.ICE-unix/2256,unix/ainex-lab:/tmp/.ICE-unix/2256', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/12df7156_e780_4556_a9eb_a92273617bcd', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.135', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'ROS_DOMAIN_ID': '45', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[14.961324] (servo_service) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.961996] (servo_service) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.962354] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/ament_index/resource_index/rosidl_interfaces/servo_service\n'}
+[14.968325] (-) TimerEvent: {}
+[14.971605] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/ChangeServoPositions.json\n'}
+[14.980837] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetServoPositions.json\n'}
+[14.989530] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetJointLock.json\n'}
+[14.998837] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/GetServoPositions.json\n'}
+[15.008280] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetPosture.json\n'}
+[15.017127] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointLock.json\n'}
+[15.026270] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoTemp.json\n'}
+[15.034881] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoDeviation.json\n'}
+[15.044642] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoVoltage.json\n'}
+[15.053620] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointPosition.json\n'}
+[15.063106] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointRange.json\n'}
+[15.068432] (-) TimerEvent: {}
+[15.073062] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/change_servo_positions.h\n'}
+[15.082738] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__functions.h\n'}
+[15.092158] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__struct.h\n'}
+[15.101076] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__type_support.h\n'}
+[15.110671] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__functions.h\n'}
+[15.119566] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__struct.h\n'}
+[15.129214] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__type_support.h\n'}
+[15.137995] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__functions.h\n'}
+[15.147610] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__struct.h\n'}
+[15.156630] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__type_support.h\n'}
+[15.166147] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__functions.h\n'}
+[15.168530] (-) TimerEvent: {}
+[15.176199] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__struct.h\n'}
+[15.184970] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__type_support.h\n'}
+[15.194355] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__functions.h\n'}
+[15.203223] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__struct.h\n'}
+[15.212930] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__type_support.h\n'}
+[15.221801] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/get_servo_positions.h\n'}
+[15.231414] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.240429] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/set_joint_lock.h\n'}
+[15.250014] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/set_posture.h\n'}
+[15.259401] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/set_servo_positions.h\n'}
+[15.268485] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__functions.h\n'}
+[15.268642] (-) TimerEvent: {}
+[15.278378] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__struct.h\n'}
+[15.287205] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__type_support.h\n'}
+[15.296596] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__functions.h\n'}
+[15.305435] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__struct.h\n'}
+[15.314912] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__type_support.h\n'}
+[15.324425] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__functions.h\n'}
+[15.333634] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__struct.h\n'}
+[15.343095] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__type_support.h\n'}
+[15.351971] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__functions.h\n'}
+[15.361651] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__struct.h\n'}
+[15.368778] (-) TimerEvent: {}
+[15.370561] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__type_support.h\n'}
+[15.380341] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__functions.h\n'}
+[15.388975] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__struct.h\n'}
+[15.398478] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__type_support.h\n'}
+[15.407641] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__functions.h\n'}
+[15.416993] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__struct.h\n'}
+[15.426787] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__type_support.h\n'}
+[15.435667] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/joint_lock.h\n'}
+[15.445510] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/joint_position.h\n'}
+[15.454536] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/joint_range.h\n'}
+[15.464266] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/servo_deviation.h\n'}
+[15.468873] (-) TimerEvent: {}
+[15.473495] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/servo_temp.h\n'}
+[15.483457] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/servo_voltage.h\n'}
+[15.493335] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/library_path.sh\n'}
+[15.502421] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/library_path.dsv\n'}
+[15.513313] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__rosidl_typesupport_fastrtps_c.h\n'}
+[15.522412] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__rosidl_typesupport_fastrtps_c.h\n'}
+[15.532278] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__rosidl_typesupport_fastrtps_c.h\n'}
+[15.541944] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__rosidl_typesupport_fastrtps_c.h\n'}
+[15.551152] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__rosidl_typesupport_fastrtps_c.h\n'}
+[15.560832] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.568999] (-) TimerEvent: {}
+[15.569773] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__rosidl_typesupport_fastrtps_c.h\n'}
+[15.579616] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__rosidl_typesupport_fastrtps_c.h\n'}
+[15.588540] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__rosidl_typesupport_fastrtps_c.h\n'}
+[15.598608] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__rosidl_typesupport_fastrtps_c.h\n'}
+[15.607952] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__rosidl_typesupport_fastrtps_c.h\n'}
+[15.617328] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__rosidl_typesupport_fastrtps_c.h\n'}
+[15.628177] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/change_servo_positions.hpp\n'}
+[15.637086] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__builder.hpp\n'}
+[15.646960] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__struct.hpp\n'}
+[15.655891] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__traits.hpp\n'}
+[15.665483] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__type_support.hpp\n'}
+[15.669090] (-) TimerEvent: {}
+[15.674684] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__builder.hpp\n'}
+[15.684316] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__struct.hpp\n'}
+[15.693956] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__traits.hpp\n'}
+[15.702749] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__type_support.hpp\n'}
+[15.712820] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__builder.hpp\n'}
+[15.722133] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__struct.hpp\n'}
+[15.732032] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__traits.hpp\n'}
+[15.741453] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__type_support.hpp\n'}
+[15.750494] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__builder.hpp\n'}
+[15.760203] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__struct.hpp\n'}
+[15.769273] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__traits.hpp\n'}
+[15.769480] (-) TimerEvent: {}
+[15.779327] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__type_support.hpp\n'}
+[15.788082] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__builder.hpp\n'}
+[15.798196] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__struct.hpp\n'}
+[15.807150] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__traits.hpp\n'}
+[15.817133] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__type_support.hpp\n'}
+[15.827135] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/get_servo_positions.hpp\n'}
+[15.836262] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.846386] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/set_joint_lock.hpp\n'}
+[15.855217] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/set_posture.hpp\n'}
+[15.865189] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/set_servo_positions.hpp\n'}
+[15.869594] (-) TimerEvent: {}
+[15.874533] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__builder.hpp\n'}
+[15.884032] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__struct.hpp\n'}
+[15.893758] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__traits.hpp\n'}
+[15.902672] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__type_support.hpp\n'}
+[15.912647] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__builder.hpp\n'}
+[15.921558] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__struct.hpp\n'}
+[15.930926] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__traits.hpp\n'}
+[15.939898] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__type_support.hpp\n'}
+[15.949252] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__builder.hpp\n'}
+[15.958403] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__struct.hpp\n'}
+[15.967573] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__traits.hpp\n'}
+[15.969699] (-) TimerEvent: {}
+[15.977801] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__type_support.hpp\n'}
+[15.986805] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__builder.hpp\n'}
+[15.996879] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__struct.hpp\n'}
+[16.005832] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__traits.hpp\n'}
+[16.015610] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__type_support.hpp\n'}
+[16.024944] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__builder.hpp\n'}
+[16.034289] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__struct.hpp\n'}
+[16.044415] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__traits.hpp\n'}
+[16.053222] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__type_support.hpp\n'}
+[16.063339] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__builder.hpp\n'}
+[16.069814] (-) TimerEvent: {}
+[16.072305] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__struct.hpp\n'}
+[16.082109] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__traits.hpp\n'}
+[16.091413] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__type_support.hpp\n'}
+[16.100891] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/joint_lock.hpp\n'}
+[16.110813] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/joint_position.hpp\n'}
+[16.119826] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/joint_range.hpp\n'}
+[16.129636] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/servo_deviation.hpp\n'}
+[16.138486] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/servo_temp.hpp\n'}
+[16.147815] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/servo_voltage.hpp\n'}
+[16.157570] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.167036] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.169912] (-) TimerEvent: {}
+[16.176767] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.185553] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.195659] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.204911] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.214707] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.224024] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.233795] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.243335] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.252518] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.262443] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.270025] (-) TimerEvent: {}
+[16.272005] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__rosidl_typesupport_introspection_c.h\n'}
+[16.281574] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__rosidl_typesupport_introspection_c.h\n'}
+[16.290354] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__rosidl_typesupport_introspection_c.h\n'}
+[16.299947] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__rosidl_typesupport_introspection_c.h\n'}
+[16.309485] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__rosidl_typesupport_introspection_c.h\n'}
+[16.318479] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.327855] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__rosidl_typesupport_introspection_c.h\n'}
+[16.336844] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__rosidl_typesupport_introspection_c.h\n'}
+[16.346965] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__rosidl_typesupport_introspection_c.h\n'}
+[16.355937] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__rosidl_typesupport_introspection_c.h\n'}
+[16.365461] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__rosidl_typesupport_introspection_c.h\n'}
+[16.370128] (-) TimerEvent: {}
+[16.374765] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__rosidl_typesupport_introspection_c.h\n'}
+[16.384537] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/change_servo_positions__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.393846] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/get_servo_positions__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.402515] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_joint_lock__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.411997] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_posture__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.420969] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/msg/detail/set_servo_positions__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.430586] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_lock__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.439469] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.449042] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/joint_range__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.457744] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_deviation__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.467139] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_temp__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.470230] (-) TimerEvent: {}
+[16.476829] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/include/servo_service/servo_service/srv/detail/servo_voltage__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.485804] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/pythonpath.sh\n'}
+[16.495568] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/pythonpath.dsv\n'}
+[16.504609] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[16.514194] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[16.523019] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[16.532483] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[16.542718] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/__init__.py\n'}
+[16.551791] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/_servo_service_s.ep.rosidl_typesupport_c.c\n'}
+[16.561343] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/_servo_service_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.570118] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/_servo_service_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.570294] (-) TimerEvent: {}
+[16.579712] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/__init__.py\n'}
+[16.588395] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_change_servo_positions.py\n'}
+[16.597819] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_change_servo_positions_s.c\n'}
+[16.606575] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_get_servo_positions.py\n'}
+[16.616069] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_get_servo_positions_s.c\n'}
+[16.624921] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_joint_lock.py\n'}
+[16.634207] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_joint_lock_s.c\n'}
+[16.643638] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_posture.py\n'}
+[16.652577] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_posture_s.c\n'}
+[16.662215] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_servo_positions.py\n'}
+[16.670383] (-) TimerEvent: {}
+[16.670884] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_servo_positions_s.c\n'}
+[16.680983] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/servo_service_s__rosidl_typesupport_c.so\n'}
+[16.689901] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/servo_service_s__rosidl_typesupport_fastrtps_c.so\n'}
+[16.699508] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/servo_service_s__rosidl_typesupport_introspection_c.so\n'}
+[16.708675] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/__init__.py\n'}
+[16.717712] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_lock.py\n'}
+[16.727332] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_lock_s.c\n'}
+[16.735913] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_position.py\n'}
+[16.745401] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_position_s.c\n'}
+[16.754071] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_range.py\n'}
+[16.763642] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_range_s.c\n'}
+[16.770474] (-) TimerEvent: {}
+[16.772636] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_deviation.py\n'}
+[16.782426] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_deviation_s.c\n'}
+[16.791523] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_temp.py\n'}
+[16.801268] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_temp_s.c\n'}
+[16.810964] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_voltage.py\n'}
+[16.819904] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_voltage_s.c\n'}
+[16.830125] (servo_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/servo_service_s__rosidl_typesupport_fastrtps_c.so\n'}
+[16.830451] (servo_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/servo_service_s__rosidl_typesupport_introspection_c.so\n'}
+[16.830749] (servo_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/servo_service_s__rosidl_typesupport_c.so\n'}
+[16.830888] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/ChangeServoPositions.idl\n'}
+[16.839985] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetServoPositions.idl\n'}
+[16.849592] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetJointLock.idl\n'}
+[16.858614] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/GetServoPositions.idl\n'}
+[16.867831] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetPosture.idl\n'}
+[16.870578] (-) TimerEvent: {}
+[16.877673] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointLock.idl\n'}
+[16.886834] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoTemp.idl\n'}
+[16.896882] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoDeviation.idl\n'}
+[16.905721] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoVoltage.idl\n'}
+[16.915592] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointPosition.idl\n'}
+[16.924708] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointRange.idl\n'}
+[16.934127] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/ChangeServoPositions.msg\n'}
+[16.943502] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetServoPositions.msg\n'}
+[16.952512] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetJointLock.msg\n'}
+[16.961986] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/GetServoPositions.msg\n'}
+[16.970695] (-) TimerEvent: {}
+[16.970958] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/msg/SetPosture.msg\n'}
+[16.980889] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointLock.srv\n'}
+[16.989885] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoTemp.srv\n'}
+[16.999644] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoDeviation.srv\n'}
+[17.009314] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/ServoVoltage.srv\n'}
+[17.018638] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointPosition.srv\n'}
+[17.028113] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/srv/JointRange.srv\n'}
+[17.037063] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/ament_index/resource_index/package_run_dependencies/servo_service\n'}
+[17.046588] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/ament_index/resource_index/parent_prefix_path/servo_service\n'}
+[17.055429] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/ament_prefix_path.sh\n'}
+[17.064699] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/ament_prefix_path.dsv\n'}
+[17.070802] (-) TimerEvent: {}
+[17.073505] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/path.sh\n'}
+[17.083556] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/environment/path.dsv\n'}
+[17.093420] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/local_setup.bash\n'}
+[17.102726] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/local_setup.sh\n'}
+[17.112880] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/local_setup.zsh\n'}
+[17.121875] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/local_setup.dsv\n'}
+[17.131797] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/package.dsv\n'}
+[17.140629] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/ament_index/resource_index/packages/servo_service\n'}
+[17.150307] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/rosidl_cmake-extras.cmake\n'}
+[17.159250] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.168698] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.170905] (-) TimerEvent: {}
+[17.178381] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.187463] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.196674] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.205939] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.215837] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_serviceConfig.cmake\n'}
+[17.225014] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_serviceConfig-version.cmake\n'}
+[17.234575] (servo_service) StdoutLine: {'line': b'-- Symlinking: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/package.xml\n'}
+[17.243828] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_generator_c.so\n'}
+[17.244936] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_generator_c.so" to ""\n'}
+[17.245209] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_fastrtps_c.so\n'}
+[17.245922] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.246124] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.247259] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.247441] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_introspection_c.so\n'}
+[17.247993] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.248188] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_c.so\n'}
+[17.248688] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_c.so" to ""\n'}
+[17.248941] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_introspection_cpp.so\n'}
+[17.249987] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.250177] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_cpp.so\n'}
+[17.251020] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_typesupport_cpp.so" to ""\n'}
+[17.271124] (-) TimerEvent: {}
+[17.347766] (servo_service) StdoutLine: {'line': b"Listing '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service'...\n"}
+[17.348013] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/__init__.py'...\n"}
+[17.348095] (servo_service) StdoutLine: {'line': b"Listing '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg'...\n"}
+[17.348188] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/__init__.py'...\n"}
+[17.348381] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_change_servo_positions.py'...\n"}
+[17.348460] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_get_servo_positions.py'...\n"}
+[17.348541] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_joint_lock.py'...\n"}
+[17.348606] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_posture.py'...\n"}
+[17.348669] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/msg/_set_servo_positions.py'...\n"}
+[17.348731] (servo_service) StdoutLine: {'line': b"Listing '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv'...\n"}
+[17.348792] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/__init__.py'...\n"}
+[17.348852] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_lock.py'...\n"}
+[17.348913] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_position.py'...\n"}
+[17.348973] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_joint_range.py'...\n"}
+[17.349038] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_deviation.py'...\n"}
+[17.349098] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_temp.py'...\n"}
+[17.349158] (servo_service) StdoutLine: {'line': b"Compiling '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages/servo_service/srv/_servo_voltage.py'...\n"}
+[17.353318] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_generator_py.so\n'}
+[17.354115] (servo_service) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/libservo_service__rosidl_generator_py.so" to ""\n'}
+[17.354333] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_generator_cExport.cmake\n'}
+[17.354508] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.354674] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.354851] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.355038] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_generator_cppExport.cmake\n'}
+[17.355264] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.355418] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.355588] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.355748] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.355923] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_cExport.cmake\n'}
+[17.356084] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.356340] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.356505] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.356701] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_cppExport.cmake\n'}
+[17.356886] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/servo_service__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.357059] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_generator_pyExport.cmake\n'}
+[17.357276] (servo_service) StdoutLine: {'line': b'-- Installing: /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/share/servo_service/cmake/export_servo_service__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.360262] (servo_service) CommandEnded: {'returncode': 0}
+[17.371456] (-) TimerEvent: {}
+[17.380014] (servo_service) JobEnded: {'identifier': 'servo_service', 'rc': 0}
+[17.380491] (ainex_motion) JobStarted: {'identifier': 'ainex_motion'}
+[17.471550] (-) TimerEvent: {}
+[17.571802] (-) TimerEvent: {}
+[17.672066] (-) TimerEvent: {}
+[17.772365] (-) TimerEvent: {}
+[17.872623] (-) TimerEvent: {}
+[17.972880] (-) TimerEvent: {}
+[18.073135] (-) TimerEvent: {}
+[18.173374] (-) TimerEvent: {}
+[18.229690] (ainex_motion) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/build', '--no-deps', 'symlink_data'], 'cwd': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bilhr2025', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bilhr2025', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2256', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bilhr2025', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1001.slice/user@1001.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bilhr2025', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ainex-lab:@/tmp/.ICE-unix/2256,unix/ainex-lab:/tmp/.ICE-unix/2256', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/12df7156_e780_4556_a9eb_a92273617bcd', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.135', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'ROS_DOMAIN_ID': '45', 'AMENT_PREFIX_PATH': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1001/bus,guid=4e7423fe4e64d0742afcb0b16825995d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages:/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/servo_service:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[18.273473] (-) TimerEvent: {}
+[18.373720] (-) TimerEvent: {}
+[18.473953] (-) TimerEvent: {}
+[18.574209] (-) TimerEvent: {}
+[18.574426] (ainex_motion) StdoutLine: {'line': b'running develop\n'}
+[18.674316] (-) TimerEvent: {}
+[18.774546] (-) TimerEvent: {}
+[18.803257] (ainex_motion) StdoutLine: {'line': b'running egg_info\n'}
+[18.803506] (ainex_motion) StdoutLine: {'line': b'creating ainex_motion.egg-info\n'}
+[18.824631] (ainex_motion) StdoutLine: {'line': b'writing ainex_motion.egg-info/PKG-INFO\n'}
+[18.824926] (ainex_motion) StdoutLine: {'line': b'writing dependency_links to ainex_motion.egg-info/dependency_links.txt\n'}
+[18.825232] (ainex_motion) StdoutLine: {'line': b'writing entry points to ainex_motion.egg-info/entry_points.txt\n'}
+[18.825434] (ainex_motion) StdoutLine: {'line': b'writing requirements to ainex_motion.egg-info/requires.txt\n'}
+[18.825606] (ainex_motion) StdoutLine: {'line': b'writing top-level names to ainex_motion.egg-info/top_level.txt\n'}
+[18.825723] (ainex_motion) StdoutLine: {'line': b"writing manifest file 'ainex_motion.egg-info/SOURCES.txt'\n"}
+[18.869521] (ainex_motion) StdoutLine: {'line': b"reading manifest file 'ainex_motion.egg-info/SOURCES.txt'\n"}
+[18.870125] (ainex_motion) StdoutLine: {'line': b"writing manifest file 'ainex_motion.egg-info/SOURCES.txt'\n"}
+[18.874636] (-) TimerEvent: {}
+[18.893271] (ainex_motion) StdoutLine: {'line': b'running build_ext\n'}
+[18.893546] (ainex_motion) StdoutLine: {'line': b'Creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages/ainex-motion.egg-link (link to .)\n'}
+[18.894194] (ainex_motion) StdoutLine: {'line': b'Installing joint_controller script to /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/ainex_motion\n'}
+[18.894501] (ainex_motion) StdoutLine: {'line': b'\n'}
+[18.894648] (ainex_motion) StdoutLine: {'line': b'Installed /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion\n'}
+[18.894807] (ainex_motion) StdoutLine: {'line': b'running symlink_data\n'}
+[18.894972] (ainex_motion) StdoutLine: {'line': b'creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index\n'}
+[18.895147] (ainex_motion) StdoutLine: {'line': b'creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index/resource_index\n'}
+[18.895340] (ainex_motion) StdoutLine: {'line': b'creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index/resource_index/packages\n'}
+[18.895497] (ainex_motion) StdoutLine: {'line': b'symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/resource/ainex_motion -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index/resource_index/packages\n'}
+[18.895637] (ainex_motion) StdoutLine: {'line': b'symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/package.xml -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ainex_motion\n'}
+[18.924126] (ainex_motion) CommandEnded: {'returncode': 0}
+[18.932139] (ainex_motion) JobEnded: {'identifier': 'ainex_motion', 'rc': 0}
+[18.933092] (-) EventReactorShutdown: {}

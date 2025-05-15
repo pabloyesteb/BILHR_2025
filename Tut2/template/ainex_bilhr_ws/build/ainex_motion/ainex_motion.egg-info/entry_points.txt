@@ -1,0 +1,2 @@
+[console_scripts]
+joint_controller = ainex_motion.joint_controller:main

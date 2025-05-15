@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/srv/JointRange_Response",
+      "fields": [
+        {
+          "name": "angle_min",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "angle_max",
+          "type": {
+            "type_id": 154,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/srv/JointRange_Response",
+      "hash_string": "RIHS01_57781247a806485b6ca259f62648e2555f65d064c2c7c380dc4aff6866422c00"
+    }
+  ]
+}

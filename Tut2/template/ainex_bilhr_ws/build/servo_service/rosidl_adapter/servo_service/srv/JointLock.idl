@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from servo_service/srv/JointLock.srv
+// generated code does not contain a copyright notice
+
+
+module servo_service {
+  module srv {
+    struct JointLock_Request {
+      sequence<uint8> ids;
+    };
+    struct JointLock_Response {
+      sequence<uint8> lock;
+    };
+  };
+};

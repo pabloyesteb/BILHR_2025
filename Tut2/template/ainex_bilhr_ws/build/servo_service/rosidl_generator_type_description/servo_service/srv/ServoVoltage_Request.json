@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/srv/ServoVoltage_Request",
+      "fields": [
+        {
+          "name": "ids",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/srv/ServoVoltage_Request",
+      "hash_string": "RIHS01_0e125b9a6b2c67db09103395e8f0e11ecc72a97208977e706924db47759a1c7b"
+    }
+  ]
+}

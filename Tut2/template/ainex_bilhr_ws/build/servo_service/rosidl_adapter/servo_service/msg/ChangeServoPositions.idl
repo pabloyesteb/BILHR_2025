@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from servo_service/msg/ChangeServoPositions.msg
+// generated code does not contain a copyright notice
+
+
+module servo_service {
+  module msg {
+    struct ChangeServoPositions {
+      sequence<uint8> ids;
+
+      sequence<float> positions;
+
+      float duration;
+    };
+  };
+};

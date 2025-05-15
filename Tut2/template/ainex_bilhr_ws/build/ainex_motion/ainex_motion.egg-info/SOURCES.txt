@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+ainex_motion/__init__.py
+ainex_motion/joint_controller.py
+ainex_motion/joint_visualization_node.py
+ainex_motion.egg-info/PKG-INFO
+ainex_motion.egg-info/SOURCES.txt
+ainex_motion.egg-info/dependency_links.txt
+ainex_motion.egg-info/entry_points.txt
+ainex_motion.egg-info/requires.txt
+ainex_motion.egg-info/top_level.txt
+ainex_motion.egg-info/zip-safe
+resource/ainex_motion

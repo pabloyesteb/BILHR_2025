@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/rosidl_generator_py/servo_service/servo_service_s__rosidl_typesupport_c.so" "TARGETS" "servo_service_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/servo_service")

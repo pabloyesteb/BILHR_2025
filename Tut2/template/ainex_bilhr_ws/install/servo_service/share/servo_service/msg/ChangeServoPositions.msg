@@ -1,0 +1,1 @@
+/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/src/servo_service/msg/ChangeServoPositions.msg

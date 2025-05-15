@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating ainex_motion.egg-info
+writing ainex_motion.egg-info/PKG-INFO
+writing dependency_links to ainex_motion.egg-info/dependency_links.txt
+writing entry points to ainex_motion.egg-info/entry_points.txt
+writing requirements to ainex_motion.egg-info/requires.txt
+writing top-level names to ainex_motion.egg-info/top_level.txt
+writing manifest file 'ainex_motion.egg-info/SOURCES.txt'
+reading manifest file 'ainex_motion.egg-info/SOURCES.txt'
+writing manifest file 'ainex_motion.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/python3.12/site-packages/ainex-motion.egg-link (link to .)
+Installing joint_controller script to /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/lib/ainex_motion
+
+Installed /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion
+running symlink_data
+creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index
+creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index/resource_index
+creating /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index/resource_index/packages
+symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/resource/ainex_motion -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ament_index/resource_index/packages
+symbolically linking /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/ainex_motion/package.xml -> /home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/install/ainex_motion/share/ainex_motion

@@ -1,0 +1,2 @@
+string posture_name
+float32 duration

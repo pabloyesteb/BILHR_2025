@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/srv/JointRange_Request",
+      "fields": [
+        {
+          "name": "ids",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/srv/JointRange_Request",
+      "hash_string": "RIHS01_95451a3b238835d59f79ba85601b8a7af96ffdd221b87bd6f2fa85b6906c8212"
+    }
+  ]
+}

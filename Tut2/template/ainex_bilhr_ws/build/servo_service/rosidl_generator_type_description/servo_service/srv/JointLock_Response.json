@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "servo_service/srv/JointLock_Response",
+      "fields": [
+        {
+          "name": "lock",
+          "type": {
+            "type_id": 147,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "servo_service/srv/JointLock_Response",
+      "hash_string": "RIHS01_47dc5edfccdaa0cf27d1b98bf2ad6ecf14b63c115fc6cb4acd05eb284f2b01bb"
+    }
+  ]
+}

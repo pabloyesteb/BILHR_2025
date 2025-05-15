@@ -1,0 +1,1 @@
+/home/bilhr2025/BILHR_SS25_DC/Tut2/template/ainex_bilhr_ws/build/servo_service/ament_cmake_environment_hooks/pythonpath.sh
