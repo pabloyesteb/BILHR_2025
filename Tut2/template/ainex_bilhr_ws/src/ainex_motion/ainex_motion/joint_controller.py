@@ -95,6 +95,7 @@ class JointController:
 
     def __init__(self, node : Node):
         self.node = node
+        self.cb_group = rclpy.callback_groups.ReentrantCallbackGroup()
 
         # Publishers for sending joint commands
         # Message format for SetServoPositions: uint8[] ids, float32[] positions, float32 duration
@@ -108,30 +109,30 @@ class JointController:
 
         # Clients for various joint services
         # GetServoPositions service: expected response has uint8[] ids, float32[] positions
-        self.cli0 = node.create_client(JointPosition, 'Get_Joint')
+        self.cli0 = node.create_client(JointPosition, 'Get_Joint', callback_group=self.cb_group)
         while not self.cli0.wait_for_service(timeout_sec=1.0):
             self.node.get_logger().info('Service not available, waiting again...')
         self.req0 = JointPosition.Request()
         
 
         # JointRange service: expected response has float32[] angle_min, float32[] angle_max, uint8[] ids
-        self.cli1 = node.create_client(JointRange, 'Joint_Range')
+        self.cli1 = node.create_client(JointRange, 'Joint_Range', callback_group=self.cb_group)
         self.req1 = JointRange.Request()
 
         # JointLock service: expected response has uint8[] lock, uint8[] ids
-        self.cli2 = node.create_client(JointLock, 'Joint_Lock')
+        self.cli2 = node.create_client(JointLock, 'Joint_Lock', callback_group=self.cb_group)
         self.req2 = JointLock.Request()
 
         # ServoDeviation service: expected response has int16[] deviation, uint8[] ids
-        self.cli3 = node.create_client(ServoDeviation, 'Servo_Deviation')
+        self.cli3 = node.create_client(ServoDeviation, 'Servo_Deviation', callback_group=self.cb_group)
         self.req3 = ServoDeviation.Request()
 
         # ServoTemp service: expected response has int8[] temperature, uint8[] ids
-        self.cli4 = node.create_client(ServoTemp, 'Servo_Temperature')
+        self.cli4 = node.create_client(ServoTemp, 'Servo_Temperature', callback_group=self.cb_group)
         self.req4 = ServoTemp.Request()
 
         # ServoVoltage service: expected response has int32[] vin
-        self.cli5 = node.create_client(ServoVoltage, 'Servo_Voltage')
+        self.cli5 = node.create_client(ServoVoltage, 'Servo_Voltage', callback_group=self.cb_group)
         self.req5 = ServoVoltage.Request()
 
         # Mapping from joint names to joint IDs (uint8 values)
@@ -449,12 +450,12 @@ def main(args=None):
     joint_controller.setPosture('crouch', 0.8)
     time.sleep(2)
 
-    # '''Joint Controller - Set Joint Position demo'''
-    # joint_names = ['l_sho_roll', 'l_sho_pitch']
-    # joint_controller.setJointPositions(joint_names, [0, 0], 1, unit='rad')
-    # time.sleep(2)
-    # joint_controller.setPosture('crouch', 0.8)
-    # time.sleep(2)
+    '''Joint Controller - Set Joint Position demo'''
+    joint_names = ['l_sho_roll', 'l_sho_pitch']
+    joint_controller.setJointPositions(joint_names, [0, 0], 1, unit='rad')
+    time.sleep(2)
+    joint_controller.setPosture('crouch', 0.8)
+    time.sleep(2)
 
     '''Joint Controller - Change Joint Position demo'''
     joint_names = ['head_pan', 'head_tilt']
