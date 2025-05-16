@@ -27,21 +27,20 @@ class JointStatePublisher(Node):
         #pass
 
         # retrieve current joint positions
-        joint_positions = self.joint_controller.getJointPositions()
+       
 
         joint_names = list(self.joint_controller.joint_id.keys())
         positions = self.joint_controller.getJointPositions(joint_names)
-        
-        for i in range(len(joint_names)):
-            msg = JointState()
-            msg.header.stamp = self.get_clock().now().to_msg()
-            msg.name = joint_names[i]
-            msg.position = positions[i]
-            msg.velocity = 0.0
-            msg.effort = 0.0
-        # publish current joint positions to the topic 'joint_states'
-        
+        # self.get_logger().info(positions[0])
 
+        msg = JointState()
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.name = joint_names
+        msg.position = positions
+        msg.velocity = [0.0 for i in range(len(joint_names))]
+        msg.effort = [0.0 for i in range(len(joint_names))]
+        self.joint_states_pub.publish(msg)
+        
 
 def main(args=None):
     rclpy.init(args=args)
